@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(140, 140, 229);
+}
+
+.header{
+    display: flex;
+    
+}
+
+.navegación{
+    width: 90vw;
+    margin: auto;
+    
+}
+
+
+.menú{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    font-size: 30px;
+    
+}
+
+.menú li{
+    background-color: black;
+    border-radius: 10px;
+    }
+
+.sección1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.audioslave7{
+    width: 80vw;
+    margin: 20px;
+    border-radius: 20px;
+
+    
+}
+
+.SoundBo, .RageBo{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center
+    ;
+}
+
+.sec1Int, .sec2Int, .sec3Int, .sec4Int{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.pieDePágina{
+    margin: 20px auto;
+}
+.pie{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.pie li{
+    background-color: black;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    color: white;
+    background-color: black;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Teko', sans-serif;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+p{
+    font-size: 2rem;
+    font-family: 'Teko', sans-serif;
+    line-height: 1,5rem;
+    font-weight:bold;
+    margin: 10px;
+}
+
+.list1, .list2 , .list3{
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.secDisc1, .secDisc2, .secDisc3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.disco1, .disco2, .disco3{
+   object-fit: scale-down;
+   margin-left: 20px;
+}
+
+.secciónCD1, .secciónCD2, .secciónCD3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+    
+}
+
+.contenedorIndex{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0,5fr 1fr 1fr 1fr 0,5fr;
+    grid-template-areas: 
+    "título"
+    "header"
+    "sección1"
+    "sección2"
+    "footer";
+    gap: 5px;
+}
+
+.título{
+    grid-area: título;
+}
+.header{
+    grid-area: header;
+}
+.sección1{
+    grid-area: sección1;
+}
+.sección2{
+    grid-area: sección2;
+}
+.footer{
+    grid-area: footer;
+}
+
+@media screen and (max-width: 728px) {
+    .contenedorIndex{
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 0,5fr 1fr 2fr 0,5fr;
+        grid-template-areas: 
+        "título título"
+        "header header"
+        "sección1 sección2"
+        "sección1 sección2"
+        "footer footer";
+        gap: 5px;
+    }
+}
