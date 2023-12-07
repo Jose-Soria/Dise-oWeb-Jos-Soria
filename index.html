@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="shortcut icon" href="./iconos/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,46 +16,79 @@
 </head>
 <body>
 
-    <div class="contenedorIndex">
-
-        <h1 class="título">Audiofeel</h1>
+        <h1>Audiofeel</h1>
 
     <header class="header">
+
+           <!--Navegación-->
+
+           <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navegación menú">
+                  <li><a href="./index.html">Inicio</a></li>
+                  <li><a href="./páginas/bandasdeorigen.html">Bandas de origen</a></li>
+                  <li><a href="./páginas/integrantes.html">Integrantes</a></li>
+                  <li><a href="./páginas/discografía.html">Discografía</a></li>
+                  <li><a href="./páginas/cancionesdestacadas.html">Canciones destacadas</a></li>
+                </ul>
+            </div>
+           </div>
+          </nav>
         
         
-        <!--Navegación-->
-        <nav class="navegación">
-            <ul class="menú">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./páginas/bandasdeorigen.html">Bandas de origen</a></li>
-                <li><a href="./páginas/integrantes.html">Integrantes</a></li>
-                <li><a href="./páginas/discografía.html">Discografía</a></li>
-                <li><a href="./páginas/cancionesdestacadas.html">Canciones destacadas</a></li>
-            </ul>
-        </nav>
+        
     </header>
 
     <!--Main-->
-    <main>
+    <main class="contenedorindex">
 
-        
+        <div class="row">
+            
+            <img src="./imagenes/audioslave7.jpg" class="audioslave7"  alt="Imagen de la banda Audioslave"> 
+            
         <section class="sección1">
+
+        <p class="col-lg-5 col-sm-4 col-xs-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora consequatur saepe alias nemo optio maxime ut necessitatibus atque aut. Eligendi saepe hic molestias, repellendus, adipisci, non aliquam sequi iusto fugiat rerum recusandae facere voluptatem impedit consequatur? Necessitatibus corporis ratione, expedita mollitia alias odio nam obcaecati, quidem saepe, accusamus sit voluptatum non atque sed culpa tempora illo aliquam dolore voluptatibus. Officiis cupiditate beatae eligendi animi placeat quo ratione dolorum sequi temporibus, nulla iure reprehenderit excepturi tenetur non perspiciatis illo consectetur, eos, illum fugiat fuga repellendus dolor eius? Totam fuga, quisquam sequi culpa similique deleniti error repellendus eligendi unde soluta commodi adipisci.</p>
+
+        <p class="col-lg-5 col-sm-4 col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit possimus facere quo, blanditiis cum saepe magni repellat aut error earum inventore distinctio odit placeat culpa ipsam eos quibusdam laboriosam. Debitis corporis nobis repudiandae dolores nisi odio. Odit, autem? Repellat, impedit. Pariatur neque temporibus ad, voluptatibus obcaecati beatae nulla illum similique odio perferendis delectus eos optio cupiditate, voluptatum commodi maxime alias atque distinctio, quas blanditiis. Excepturi eveniet nemo repellat facere illo? Accusamus perspiciatis atque, blanditiis facere nostrum consequatur autem obcaecati ad. Dolorum velit dolores quae esse corporis incidunt ipsam eligendi magnam fuga cupiditate. At ipsa, nihil quae nisi quos atque nam?</p> </section> </div>
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide w-75 m-auto my-5">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imagenes/audioslave19.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/audioslave22.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/audioslave23.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         
-        <img src="./imagenes/audioslave7.jpg" class="audioslave7"  alt="Imagen de la banda Audioslave"> 
-
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora consequatur saepe alias nemo optio maxime ut necessitatibus atque aut. Eligendi saepe hic molestias, repellendus, adipisci, non aliquam sequi iusto fugiat rerum recusandae facere voluptatem impedit consequatur? Necessitatibus corporis ratione, expedita mollitia alias odio nam obcaecati, quidem saepe, accusamus sit voluptatum non atque sed culpa tempora illo aliquam dolore voluptatibus. Officiis cupiditate beatae eligendi animi placeat quo ratione dolorum sequi temporibus, nulla iure reprehenderit excepturi tenetur non perspiciatis illo consectetur, eos, illum fugiat fuga repellendus dolor eius? Totam fuga, quisquam sequi culpa similique deleniti error repellendus eligendi unde soluta commodi adipisci.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit possimus facere quo, blanditiis cum saepe magni repellat aut error earum inventore distinctio odit placeat culpa ipsam eos quibusdam laboriosam. Debitis corporis nobis repudiandae dolores nisi odio. Odit, autem? Repellat, impedit. Pariatur neque temporibus ad, voluptatibus obcaecati beatae nulla illum similique odio perferendis delectus eos optio cupiditate, voluptatum commodi maxime alias atque distinctio, quas blanditiis. Excepturi eveniet nemo repellat facere illo? Accusamus perspiciatis atque, blanditiis facere nostrum consequatur autem obcaecati ad. Dolorum velit dolores quae esse corporis incidunt ipsam eligendi magnam fuga cupiditate. At ipsa, nihil quae nisi quos atque nam?</p> </section>
-
-        <section class="sección2">
-
-        <img src="./imagenes/audiosalve1.jpeg" alt="imagen de los integrantes de la banda Audioslave">
-
-        <img src="./imagenes/audioslave4.jpg" alt="imagen de los integrantes de la banda Audioslave">
-
-        <img src="./imagenes/audioslave5.jpg" alt="imagen de los integrantes de la banda Audioslave"> 
-
         
+        
+        <section class="sección2 col-lg-12 col-sm-12 col-xs-12">
+
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit nemo delectus dolore ipsum consectetur libero accusamus, cumque laboriosam quam quaerat. Reiciendis quam neque fuga pariatur aliquam, porro officia, eligendi dolores quo impedit, quidem odit nemo aperiam fugit ab maiores enim quae distinctio soluta illum iusto. Eum incidunt modi alias aliquam voluptates sunt, deserunt dignissimos debitis, minus fugiat rerum fugit optio? Reiciendis voluptate nam dolore expedita consectetur dicta iste ipsam, adipisci aperiam dignissimos. Consequatur animi voluptatum laboriosam error ex rerum id. Impedit, debitis placeat fuga iste at ipsa quo amet non sequi nam beatae, veritatis ratione illo? Illum facere doloremque aperiam!</p>
         </section>
 
@@ -75,7 +109,8 @@
         </nav>
     </footer>
 
-</div>
+
     
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -23,9 +23,9 @@ body{
 .menú{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
     padding: 10px;
-    font-size: 30px;
     
 }
 
@@ -33,23 +33,33 @@ body{
     background-color: black;
     border-radius: 10px;
     }
-
+    
+    /* index */
 .sección1{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
 }
 
 .audioslave7{
     width: 80vw;
+    margin: 20px auto;
+    border-radius: 20px;   
+}
+
+.sgA, .rage1{
+    width: 80vw;
     margin: 20px;
     border-radius: 20px;
+}
 
+.sección2{
+    text-align: center;
+    margin: 20px;
     
 }
 
+/* bandas de origen*/
 .SoundBo, .RageBo{
     display: flex;
     flex-direction: column;
@@ -58,21 +68,28 @@ body{
     ;
 }
 
+/* integrantes */
 .sec1Int, .sec2Int, .sec3Int, .sec4Int{
     display: flex;
     align-items: center;
     margin: 20px;
 }
 
+.int1, .int2, .int3, .int4{
+border-radius: 20px;
+}
+
 .pieDePágina{
-    margin: 20px auto;
+    width: 90vw;
+    margin: auto;
 }
 .pie{
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
     padding: 10px;
-    font-size: 30px;
+    
 }
 
 .pie li{
@@ -95,25 +112,33 @@ h2{
     font-family: 'Teko', sans-serif;
     font-size: 60px;
     text-align: center;
+    font-weight: bold;
+    color: black;
 
 }
 
 p{
     font-size: 2rem;
     font-family: 'Teko', sans-serif;
-    line-height: 1,5rem;
+    line-height: 2rem;
+    text-align: center;
     font-weight:bold;
-    margin: 10px;
+    margin: 15px;
+    color: black;
 }
 
+/* dicografía */
 .list1, .list2 , .list3{
     font-family: 'Teko', sans-serif;
     font-size: 50px;
+    color: black;
 }
 
 a{
     text-decoration: none;
     color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5rem;
 }
 
 .secDisc1, .secDisc2, .secDisc3{
@@ -123,59 +148,14 @@ a{
 }
 
 .disco1, .disco2, .disco3{
-   object-fit: scale-down;
+   border-radius: 20px;
    margin-left: 20px;
 }
 
+/* canciones destacadas */
 .secciónCD1, .secciónCD2, .secciónCD3{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 15px;
-    
-}
-
-.contenedorIndex{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0,5fr 1fr 1fr 1fr 0,5fr;
-    grid-template-areas: 
-    "título"
-    "header"
-    "sección1"
-    "sección2"
-    "footer";
-    gap: 5px;
-}
-
-.título{
-    grid-area: título;
-}
-.header{
-    grid-area: header;
-}
-.sección1{
-    grid-area: sección1;
-}
-.sección2{
-    grid-area: sección2;
-}
-.footer{
-    grid-area: footer;
-}
-
-@media screen and (max-width: 728px) {
-    .contenedorIndex{
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: 0,5fr 1fr 2fr 0,5fr;
-        grid-template-areas: 
-        "título título"
-        "header header"
-        "sección1 sección2"
-        "sección1 sección2"
-        "footer footer";
-        gap: 5px;
-    }
 }

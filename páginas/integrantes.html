@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="shortcut icon" href="../iconos/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,15 +22,23 @@
 
     <header class="header">
 
-        <nav class="navegación">
-            <ul class="menú">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./bandasdeorigen.html">Bandas de origen</a></li>
-                <li><a href="./integrantes.html">Integrantes</a></li>
-                <li><a href="./discografía.html">Discografía</a></li>
-                <li><a href="./cancionesdestacadas.html">Canciones destacadas</a></li>
+       <!--Navegación-->
+
+       <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navegación menú">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../páginas/bandasdeorigen.html">Bandas de origen</a></li>
+              <li><a href="../páginas/integrantes.html">Integrantes</a></li>
+              <li><a href="../páginas/discografía.html">Discografía</a></li>
+              <li><a href="../páginas/cancionesdestacadas.html">Canciones destacadas</a></li>
             </ul>
-        </nav>
+        </div>
+      </nav>
+
     </header>
 
     <main>
@@ -38,7 +47,7 @@
             <div>
         <h2>Chris Cornell</h2>
 
-        <img src="../imagenes/chriscornell1" alt="imagen de Chris Cornell"></div>
+        <img src="../imagenes/chriscornell1" class="int1"  alt="imagen de Chris Cornell"></div>
         
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti amet assumenda cupiditate similique est a. Cupiditate ad molestiae laboriosam harum quisquam iste alias quibusdam, in illo dolorum vel unde deleniti quasi. Aliquam minima corporis ipsam quaerat recusandae odio id voluptatibus rem. Quidem, pariatur a optio est doloribus, quod vel beatae, consequuntur et suscipit similique omnis non rem nisi? Ipsa, impedit assumenda? Hic autem dolorem, facilis nemo quos magni voluptas itaque sapiente porro fuga, consequatur id velit laudantium. Officiis voluptatibus at, repellat unde, magnam nulla possimus assumenda explicabo perferendis ex, optio molestiae aliquam eius? Voluptate, doloribus dolores! Vitae officiis provident ipsam.</p> 
 
@@ -52,7 +61,7 @@
         <div>   
         <h2>Tom Morello</h2>
 
-        <img src="../imagenes/tommorello1" alt="imagen de Tom Morello"></div>
+        <img src="../imagenes/tommorello1" class="int2" alt="imagen de Tom Morello"></div>
         
           </section>
 
@@ -61,7 +70,7 @@
             <div>
         <h2>Tim Commerford</h2>
 
-        <img src="../imagenes/timcommerford1" alt="imagen de Tim Commerford"></div>
+        <img src="../imagenes/timcommerford1" class="int3" alt="imagen de Tim Commerford"></div>
 
          
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam excepturi dolores, ipsa cumque aspernatur dignissimos sit culpa eos tempore dolorum saepe voluptatibus perferendis corporis velit cum sunt perspiciatis, reiciendis mollitia voluptate eum. Voluptatum sequi ab itaque dolorem, tempora optio doloribus magnam qui perspiciatis reprehenderit magni ipsa id impedit consectetur sint? Delectus debitis vero ipsam labore eius saepe, cum aspernatur totam fugiat molestias libero inventore sint, quidem rerum. Cupiditate distinctio quas ut possimus! Aut ullam laboriosam cupiditate deleniti dolores aliquid asperiores repellat molestias consequuntur a, error, ipsam fugit optio animi magnam officiis voluptatibus autem dolorum nisi minima veniam, dolorem in! Ea.</p> 
@@ -74,10 +83,37 @@
         <div>
         <h2>Brad Wilk</h2>
 
-        <img src="../imagenes/bradwilk2.jpg" alt="imagen de Brad Wilk">
+        <img src="../imagenes/bradwilk2.jpg" class="int4" alt="imagen de Brad Wilk">
         </div>
         
           </section> 
+
+          <div id="carouselExampleIndicators" class="carousel slide w-75 m-auto my-5">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../imagenes/audiosalve1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/audioslave4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/audioslave5.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
 
     </main>
@@ -94,6 +130,6 @@
     </footer>
     
     </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
