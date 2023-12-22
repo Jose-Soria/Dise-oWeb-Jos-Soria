@@ -10,6 +10,7 @@ body{
 
 .header{
     display: flex;
+    flex-direction: column;
     
 }
 
@@ -35,28 +36,18 @@ body{
     }
     
     /* index */
-.sección1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .audioslave7{
     width: 80vw;
-    margin: 20px auto;
-    border-radius: 20px;   
+    margin:20px auto;
+    border-radius: 20px; 
+    display:flex;
 }
 
 .sgA, .rage1{
     width: 80vw;
     margin: 20px;
     border-radius: 20px;
-}
-
-.sección2{
-    text-align: center;
-    margin: 20px;
-    
 }
 
 /* bandas de origen*/
@@ -118,6 +109,7 @@ h2{
 }
 
 p{
+    display: flex;
     font-size: 2rem;
     font-family: 'Teko', sans-serif;
     line-height: 2rem;
@@ -159,3 +151,12 @@ a{
     align-items: center;
     margin: 15px;
 }
+
+section{
+    display: flex;
+}
+
+
+
+
+
