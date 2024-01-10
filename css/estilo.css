@@ -88,6 +88,7 @@ border-radius: 20px;
     border-radius: 10px;
 }
 
+/*textos*/
 h1{
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
@@ -156,6 +157,36 @@ section{
     display: flex;
 }
 
+.contenedorInt{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 5fr 0.1fr;
+    grid-template-areas: 
+    "headerInt"
+    "mainInt"
+    "footerInt";
+    gap: 5px;
+}
+
+.headerInt{
+    grid-area: headerInt;
+    
+}
+.mainInt{
+    grid-area: mainInt;
+    
+}
+.footerInt{
+    grid-area: footerInt;
+    
+}
+
+@media screen and (max-width: 480px) {
+    .sec1Int, .sec2Int, .sec3Int, .sec4Int{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  }
+    }
 
 
 
